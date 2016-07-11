@@ -2,7 +2,7 @@ var http = require('http');
 
 exports.callRedPen = function (request, assertion) {
     var options = {
-        hostname: 'localhost', port: 8080,
+        hostname: '0.0.0.0', port: 8080,
         path: '/rest/document/validate/json',
         method: 'POST',
         headers: {'Content-Type': 'application/json'}
