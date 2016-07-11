@@ -90,7 +90,7 @@ if [ $COMMAND = "start" ]; then
         exit 0
     fi
     echo "starting RedPen server without stop key..." 1>&2
-    exec "$JAVA_CMD" -jar $JAVA_OPTS $REDPEN_WAR_FILE -p $REDPEN_PORT >> $REDPEN_LOG_FILE 2>&1 &
+    exec "$JAVA_CMD" -jar $JAVA_OPTS $REDPEN_WAR_FILE -p $REDPEN_PORT -c redpen-conf.xml >> $REDPEN_LOG_FILE 2>&1 &
     exit 0
 elif [ $COMMAND = "stop" ]; then
     echo "stopping RedPen server" 1>&2
