@@ -1,0 +1,8 @@
+pipeline:
+    - name: setup
+      command: bin/redpen-server start
+    - name: run test
+      command: cd js/ ; mocha --timeout 15000
+      wait_for: host=localhost port=8080 state=ready
+    - name: teardown server
+      command: bin/redpen-server stop
