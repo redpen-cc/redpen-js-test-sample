@@ -1,18 +1,18 @@
-steps to run this test
------------------------
+Introduction
+-------------
 
-1. install mocha
-```
-$ npm install -g mocha
-```
+This project is a sample of RedPen JavaScript plugin. This repository includes all the resources needed for testing RedPen validator. This repository include a plain validator in **js/validator.js**.
+The tests are inluded in **test/validator-js-test.js**. **test/redpen.js** is a utility script used in the testing.
 
-2. run RedPen in server mode
-```
-$ cd $REDPEN_HOME/bin
-$ ./redpen-server
-```
+Run Test
+--------
 
-4. run mocha
+* Makefile
+We just run **make** in the top directory.
+
+* Walter
+Walter is a tiny deployment plugin. To run the testing with the walter we run the following commmand.
+
 ```
-$ mocha
+bin/walter -c pipeline.yml
 ```
