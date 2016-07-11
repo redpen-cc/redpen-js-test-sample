@@ -5,10 +5,10 @@ run: setup test teardown
 
 setup:
 	bin/redpen-server start
-	sleep 10
+	sleep 5
 
 test:
-	cd  js/ ; mocha
+	cd  js/ ; mocha --timeout 15000
 
 teardown:
 	bin/redpen-server stop

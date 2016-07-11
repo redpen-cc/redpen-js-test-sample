@@ -3,10 +3,6 @@ language: bash
 jdk:
     - oraclejdk8
 
-node_js:
-  - "5"
-  before_script:
-    - npm install -g mocha
-
 script:
+  - npm install -g mocha
   - make
