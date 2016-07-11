@@ -4,4 +4,4 @@ jdk:
     - oraclejdk8
 
 script:
-  - sh bin/walter -c pipeline.yml
+  - bin/walter -c pipeline.yml
