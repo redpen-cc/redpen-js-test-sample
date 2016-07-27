@@ -7,12 +7,4 @@ The tests are inluded in **test/validator-js-test.js**. **test/redpen.js** is a 
 Run Test
 --------
 
-* Makefile
 We just run **make** in the top directory.
-
-* Walter
-Walter is a tiny deployment plugin. To run the testing with the walter we run the following commmand.
-
-```
-bin/walter -c pipeline.yml
-```
